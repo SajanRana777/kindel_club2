@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import Card from './components/Card';
+import Card from './components/temp';
 import './App.css';
 import Filters from './components/filters';
 import Services from './components/services';
