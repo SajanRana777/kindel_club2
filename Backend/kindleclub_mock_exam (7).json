@@ -1,0 +1,34 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"kindleclub_mock_exam"},
+{"type":"table","name":"exam_package","database":"kindleclub_mock_exam","data":
+[
+{"package_id":"1","package_name":"18 Week Package","total_week":"18","subject_name":"English\/Math","learning_mode":"online","per_week_price":"35.00","original_price":"700.00","discount_percent":"10.00","final_price":"630.00","is_hero":"false","purchase_url":"https:\/\/exams.kindleclub.co.uk\/course\/view.php?id=860","status":"active"},
+{"package_id":"2","package_name":"15 Week Package","total_week":"15","subject_name":"Math","learning_mode":"both","per_week_price":"38.00","original_price":"650.00","discount_percent":"10.00","final_price":"585.00","is_hero":"true","purchase_url":"https:\/\/exams.kindleclub.co.uk\/course\/view.php?id=860","status":"inactive"},
+{"package_id":"3","package_name":"20 Week Package","total_week":"20","subject_name":"Math,English","learning_mode":"online","per_week_price":"38.00","original_price":"650.00","discount_percent":"10.00","final_price":"585.00","is_hero":"false","purchase_url":"https:\/\/exams.kindleclub.co.uk\/course\/view.php?id=860","status":"active"}
+]
+}
+,{"type":"table","name":"location","database":"kindleclub_mock_exam","data":
+[
+{"location_id":"1","location_name":"Kindle Club Kochi Center","address":"MG Road, Near Metro Station","city":"Kochi","state":"Kerala","country":"India","status":"active"},
+{"location_id":"2","location_name":"Kindle Club Delhi Center","address":"Connaught Place, Block A","city":"New Delhi","state":"Delhi","country":"India","status":"inactive"},
+{"location_id":"3","location_name":"Kindle Club Bangalore Center","address":"Indiranagar 100 Feet Road","city":"Bangalore","state":"Karnataka","country":"India","status":"active"},
+{"location_id":"4","location_name":"Kindle Club Mumbai Center","address":"Andheri East, MIDC Area","city":"Mumbai","state":"Maharashtra","country":"India","status":"inactive"},
+{"location_id":"5","location_name":"Kindle Club Chennai Center","address":"T Nagar Main Road","city":"Chennai","state":"Tamil Nadu","country":"India","status":"active"}
+]
+}
+,{"type":"table","name":"mock_exam","database":"kindleclub_mock_exam","data":
+[
+{"mock_exam_id":"1","title":"English Weekly Writing Practice Test","subject_name":"English","frequency":"weekly","price":"99.00","learning_mode":"online","day_of_week":"Sunday","start_time":"10:00:00","end_time":"12:00:00","start_date":"2026-03-01","end_date":"2026-05-30","location_id":"3","status":"active"},
+{"mock_exam_id":"2","title":"Math Writing Practice Test - One-time","subject_name":"MATH","frequency":"one-time","price":"199.00","learning_mode":"classroom","day_of_week":"one-time","start_time":"09:00:00","end_time":"10:00:00","start_date":"2026-03-03","end_date":"0000-00-00","location_id":"1","status":"active"}
+]
+}
+,{"type":"table","name":"mock_exam_subject","database":"kindleclub_mock_exam","data":
+[
+{"id":"10","mock_exam_id":"1","subject_id":"1"},
+{"id":"11","mock_exam_id":"1","subject_id":"2"},
+{"id":"12","mock_exam_id":"1","subject_id":"3"},
+{"id":"13","mock_exam_id":"1","subject_id":"4"}
+]
+}
+]

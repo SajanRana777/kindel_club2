@@ -1,0 +1,87 @@
+openapi: 3.0.0
+info:
+  title: Exam Plans API
+  description: API to fetch exam plans
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /mock_exam:
+    get:
+      summary: Get mock_exam
+      description: Fetch all exam plans or filter by learning mode, status, and date range
+      parameters:
+        - name: learning_mode
+          in: query
+          description: learning mode (Online, Classroom, All)
+          required: true
+          schema:
+            type: string
+            enum: [Online, Classroom, All]
+
+        - name: status
+          in: query
+          description: Status (active, inactive)
+          required: true
+          schema:
+            type: string
+            enum: [active, inactive]
+
+        - name: start_date
+          in: query
+          description: 
+          required: true
+          schema:
+            type: string
+            format: date
+
+        - name: end_date
+          in: query
+          description: 
+          required: true
+          schema:
+            type: string
+            format: date
+
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExamPlan'
+
+
+  
+
+components:
+  schemas:
+    ExamPlan: 
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: 
+        learning_mode:
+          type: string
+          enum: [Online, Classroom,]
+          example: Online
+        start_date:
+          type: string
+          format: date
+          example: 2026-01-01
+        end_date:
+          type: string
+          format: date
+          example: 2026-06-01
+        status:
+          type: string
+          enum: [active, inactive]
+          example: active
